@@ -1,7 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { StaticRouter as Router, Route, Switch } from "react-router-dom";
 
-import GlobalStyles from "styles/global";
+import GlobalStyles from "./styles/global";
 
 const Routes = () => {
   return (
