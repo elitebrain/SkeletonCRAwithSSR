@@ -1,16 +1,19 @@
 import React from "react";
-import { StaticRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import Index from "./components/pages";
+import About from "./components/pages/about";
 
 import GlobalStyles from "./styles/global";
 
 const Routes = () => {
   return (
-    <Router>
+    <>
       <Switch>
-        <Route path="/" render={() => <div>Default Page</div>} />
+        <Route exact path="/" component={Index} />
+        <Route path="/about" component={About} />
       </Switch>
       <GlobalStyles />
-    </Router>
+    </>
   );
 };
 

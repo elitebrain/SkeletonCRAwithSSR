@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
+    "build": "rm -rf build && node scripts/build.js",
     "test": "node scripts/test.js",
-    "ssr": "cross-env NODE_ENV=development node server"
+    "ssr": "set NODE_ENV=development&&node server/index.js"
   },
   "dependencies": {
     "@babel/core": "7.8.4",
